@@ -1,13 +1,100 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-image: url("https://cdn.pixabay.com/photo/2013/07/12/17/49/landscape-152502_1280.png");
+
+  font-family: "Odibee Sans", cursive;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+}
+h1 {
+  font-size: 5rem;
+  margin: 4rem 0;
+}
+#score {
+  font-size: 2rem;
+  color: green;
+}
+
+.circles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.circle {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  background-color: saddlebrown;
+  display: inline-block;
+  margin: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: url("./assets/img/watering\ can.png"), auto;
+}
+
+.flower.active {
+  visibility: visible;
+}
+
+button {
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  background-color: burlywood;
+  margin: 1rem;
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  cursor: pointer;
+}
+.overlay {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  background-color: rgba(255, 255, 255, 0.911);
+  padding: 2rem;
+  width: 35%;
+  height: 25%;
+  border-radius: 10px;
+  position: relative;
+}
+
+.modal button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+}
+
+.modal p {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+  color: rgba(194, 65, 33, 0.973);
+}
+.score {
+  color: green !important;
+}
+
+.flower {
+  font-size: 4rem;
+  visibility: hidden;
 }
