@@ -102,7 +102,7 @@ class App extends Component {
 
     return (
       <div>
-        <h1>Speed Game</h1>
+        <h1>Water The Sunflower 🌻</h1>
         <p>Your score: {this.state.score}</p>
         <div className="circles">
           {circles.map((_, i) => (
@@ -121,15 +121,14 @@ class App extends Component {
           )}
           {this.state.gameOn && <Button click={this.stopHandler}>STOP</Button>}
         </div>
-       
-          {this.state.showGameOver && (
-            <GameOver
-              click={this.closeHandler}
-              score={this.state.score}
-              message={message}
-            />
-          )}
 
+        {this.state.showGameOver && (
+          <GameOver
+            click={this.closeHandler}
+            score={this.state.score}
+            message={message}
+          />
+        )}
       </div>
     );
   }
