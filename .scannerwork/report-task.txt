@@ -1,0 +1,6 @@
+projectKey=my_sonarproject_2
+serverUrl=http://localhost:8889
+serverVersion=9.2.4.50792
+dashboardUrl=http://localhost:8889/dashboard?id=my_sonarproject_2
+ceTaskId=AYNaWDmNBWggCArzl07r
+ceTaskUrl=http://localhost:8889/api/ce/task?id=AYNaWDmNBWggCArzl07r
